@@ -1,12 +1,15 @@
 import {Provider} from "react-redux";
-import {Home} from "./Pages/Home/Home";
 import {store} from "./Redux/store";
-
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
+import {RootApplication} from "./Stacks/MyRoutes";
 
 export default function App() {
   return (
     <Provider store={store}>
-      <Home/>
+      <NavigationContainer>
+      <RootApplication/>
+      </NavigationContainer>
     </Provider>
   );
 }

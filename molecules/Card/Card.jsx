@@ -3,6 +3,7 @@ import {useDispatch} from "react-redux";
 import {deleteTodo,toggleTodo} from "../../Redux/action";
 
 export const Card=({data})=>{
+    console.log("data",data)
 
     const dispatch=useDispatch();
     const strike={
